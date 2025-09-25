@@ -3,7 +3,21 @@ uuid = "34ad4001-cf0c-4012-9a5c-018ad42daef7"
 authors = ["Franco Diaz Laura <fdiazlau@asu.edu> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"
+
 [compat]
+CSV = "0.10.15"
+DataFrames = "1.8.0"
+Distributions = "0.25.120"
+GLM = "1.9.0"
+ProgressMeter = "1.11.0"
+StatsPlots = "0.15.8"
 julia = "1.9"
 
 [extras]
