@@ -1,4 +1,4 @@
-module io_pset
+module io_pset_3
 # Installing packages
 using CSV, DataFrames, GLM, LinearAlgebra,Chain, DataFramesMeta,Statistics, Optim
 ##############################
@@ -278,7 +278,7 @@ One-step GMM estimation of θ2, followed by optional two-step reweighting.
 
 Returns a NamedTuple with θ2_hat, Γ_hat, α_ν_hat, θ1_hat, δ_hat, ξ_hat, Q, and (optionally) Q2.
 """
-
+using Optim
 
 function estimate_blp!(θ2_start_raw::AbstractVector{<:Real};
                        two_step::Bool=true, damping::Real=1.0, tol::Real=1e-12)
